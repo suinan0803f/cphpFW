@@ -1,0 +1,354 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Serif JP",'Capriola',"Helvetica Neue", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
+  background-color: var(--background-color);
+  /* color: #424242; */
+  /* background-image: url(../img/wood-texture_00001.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed; */
+}
+
+/* -----Font----- */
+h1, h2, h3, h4, h5,
+nav ul li a,
+#logo-container span,
+#color-switch .btn {
+  font-family: 'Noto Serif JP', 'Capriola', "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Meiryo, sans-serif;
+}
+p {
+  line-height: 2rem;
+}
+.button-collapse {
+  color: var(--primary-color);
+}
+@media (max-width: 414px) {
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+}
+
+nav .brand-logo {
+  height: 100px;
+}
+
+/* -----navbar----- */
+nav {
+  top: 0;
+  height: 100px;
+  line-height: 100px;
+}
+
+ /* @media only screen and (max-width : 992.99px) {
+  nav .brand-logo {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+} */
+
+.navbar-fixed {
+  height: 100px;
+} 
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-list {
+  position: absolute;
+  opacity: 1;
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 0.2 ease-in-out 0s;
+  transition: all 0.2 ease-in-out 0s;
+  overflow: hidden;
+}
+.dropdown-list li {
+  width: 100%;
+  line-height: 56px;
+  text-align: center;
+  background-color: var(--primary-color);
+}
+.dropdown:hover .dropdown-list {
+  visibility: visible;
+  opacity: 1;
+  top: 100%;
+}
+@media only screen and (min-width : 1280px) {
+  .adjust {
+    width: 1280px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width : 601px) {
+  nav.nav-extended .nav-wrapper {
+    min-height: 100px;
+  }
+  nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+    height: 100px;
+    line-height: 100px;
+  }
+  .navbar-fixed {
+    height: 100px;
+  }
+}
+
+nav .sidenav-trigger {
+  float: right;
+  right: 1em;
+  height: 100px;
+}
+nav .sidenav-trigger i {
+  height: 100px;
+  line-height: 100px;
+}
+
+.slider .slides li .caption {
+  font-family: 'Capriola';
+  text-shadow:
+     1px  1px 0 #000, -1px -1px 0 #000,
+    -1px  1px 0 #000,  1px -1px 0 #000,
+     0px  1px 0 #000, -1px    0 0 #000,
+    -1px    0 0 #000,  1px    0 0 #000;
+}
+.slider .slides li .left-align {
+  top: 5%;
+  left: 5%;
+}
+.slider .slides li .right-align {
+  top: 5%;
+  right: 5%;
+}
+
+.slider .slides li h3{
+  font-size: 4rem;
+}
+
+.prev i{
+  color: #fff;
+  font-size: 2vw;
+  height: 700px;
+  line-height: 700px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-decoration: none;
+  text-align: center;
+  width: 8vw;
+  left: 0;
+  z-index: 996;
+}
+.next i{
+  color: #fff;
+  font-size: 2vw;
+  height: 700px;
+  line-height: 700px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-decoration: none;
+  text-align: center;
+  width: 8vw;
+  right: 0;
+  z-index: 996;
+}
+
+main {
+  padding-bottom: 180px;
+}
+
+.info-block {
+  width: 100%;
+  min-height: 500px;
+}
+
+.information {
+  position: relative;
+  border: 3px dashed var(--primary-color);
+
+  margin: 30px 30px;
+  padding-top: 10px;
+}
+
+.information h5 {
+  position: absolute;
+  border: 3px solid var(--secondary-color);
+  background-color: var(--background-color);
+  top: -30px;
+  left: -30px;
+}
+.information ul li {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+
+.what-block {
+  width: 100%;
+  min-height: 500px;
+}
+.what-title {
+  width: 100%;
+  min-height: 100px;
+  position: relative;
+}
+.what-title h4 {
+  text-align: center;
+  position: absolute;
+  left: 100px;
+}
+.what-title img {
+  /* width: 10%;
+  height: 10%; */
+  position: absolute;
+  right: 0;
+}
+
+.what-is ul li {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.what-is ul li div {
+  width: 50%;
+  border: 3px solid var(--separator-color);
+  min-height: 200px;
+}
+.what-is ul li img {
+  width: 50%;
+  border: 3px solid var(--separator-color);
+  min-height: 200px;
+}
+
+.flex-reverse {
+  flex-direction: row-reverse;
+}
+
+.how-block {
+  width: 100%;
+  min-height: 500px;
+}
+
+.where-block {
+  width: 100%;
+  min-height: 500px;
+}
+
+/* footer */
+.footer-absolute {
+  bottom: 0;
+  width: 100%;
+  /* display: flex; */
+  /* background-repeat: no-repeat; */
+  /* background-blend-mode: overlay; */
+  /* background-image: url(../IMG/relax.jpg); */
+  /* background-attachment: fixed; */
+  /* background-position: center; */
+  /* background-size: cover; */
+  /* background-blend-mode: exclusion; */
+}
+/* ページトップボタン */
+.pagetop{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  background: var(--secondary-color);
+  opacity: 0.6;
+  border-radius: 50%;
+}
+.pagetop a{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+.pagetop a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: var(--font-on-primary-color-main);
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -5px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+.page-footer .container {
+  min-height: 100px;
+  position: relative;
+  width: 90%;
+}
+.footer_left {
+  width: 35%;
+  float: left;
+}
+.footer_left h5{
+  margin: 0;
+}
+
+.sns {
+  display: flex;
+}
+.sns a {
+  display: flex;
+  font-size: 2em;
+  margin-right: 30px;
+}
+
+.footer__line{
+  border-bottom: 3px solid var(--font-on-primary-color-main);
+}
+
+.footer_right {
+  display: inline-block;
+  width: 65%;
+  position: relative;
+}
+.footer_right p{
+  margin: 1% 0;
+}
+.footer_right_box {
+  display: flex;
+  justify-content: flex-start;
+}
+.footer_right_box .footer_right_l {
+  width: 50%;
+  float: left;
+}
+.footer_right_box .footer_right_r {
+  width: 50%;
+  float: left;
+}
+
+
+.footer-copyright {
+  position: relative;
+  min-height: 5%;
+  clear: left;
+}
+.footer-copyright .container {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  margin: 0;
+  max-width: none;
+}
+
+.footer-copyright .container p{
+  position: absolute;
+  top: -5%;
+  right: 0;
+}
